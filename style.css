@@ -1,100 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: whitesmoke;
     font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
 }
 
-.shopbox{
+.shopbox {
     width: 80%;
     margin: 0 auto;
 }
-.shopbox h1{
+
+.shopbox h1 {
     text-align: center;
     font-size: 4vmax;
     margin-top: 1rem;
 }
-/* Styles for screens larger than 768px */
-.inputbox{
-   text-align: center;
-   margin: 2rem 0;
-}
-.inputbox input{
-    width:300px;
-}
-.inputbox input[type="text"],
-.inputbox button {
-    
-    padding: 10px; /* Add padding to the input field and button */
-    font-size: 16px; /* Set the font size */
-     /* Add some border radius to make it rounder */
 
-}
-
-/* Styles for screens smaller than or equal to 768px */
-@media screen and (max-width: 768px) {
-    .inputbox input[type="text"] {
-        width: 100%; /* Set the width of the input field to 100% */
-        margin-bottom: 10px; /* Add some space below the input field */
-    }
-
-    .inputbox button {
-        width: 100%; /* Set the width of the button to 100% */
-    }
-}
-.filter{
+.inputbox {
     text-align: center;
     margin: 2rem 0;
 }
+
+.inputbox input[type="text"],
+.inputbox button {
+    padding: 12px; /* Increased padding */
+    font-size: 16px;
+    border: 2px solid #ccc; /* Added border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+}
+
+.inputbox input[type="text"] {
+    width: 300px;
+}
+
+.inputbox button {
+    width: 100px; /* Adjust button width */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.inputbox button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.filter {
+    text-align: center;
+    margin: 2rem  auto ;
+}
+
 .filter input {
-    padding: 10px; /* Add padding to the input field */
-    border: none; /* Remove default border */
-    border-bottom: 1px solid #ccc; /* Add border only at the bottom */
-    font-size: 16px; /* Set the font size */
-    width: 400px; /* Set the width of the input field */
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 350px;
     background-color: transparent;
-    align-items: center;
-    color:black;
-}
-.inputbox input[type="text"]:hover {
-    border: transparent; /* Set border color to transparent on hover */
+    color: black;
+    outline: none;
 }
 
-.list {
-   text-align: center;
-   width:50%;
-   margin: 0 auto ;
-   display: flex;
- 
-}
-
-.list ul {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+.filter input:focus {
+    border-bottom-color: #007bff; /* Blue bottom border on focus */
 }
 
 .list li {
-    margin: 5px 0; /* Add some margin between list items */
-    border: 1px solid #ccc; /* Add border */
-    border-radius: 5px; /* Add border radius */
-    padding: 10px; /* Add padding inside the border */
-    align-items: center; /* Center items vertically */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
 }
 
-.list li:last-child {
-    margin-bottom: 0; /* Remove margin from last list item */
+.list li:hover {
+    background-color: #f9f9f9;
+}
+
+.list li .text {
+    flex-grow: 1; /* Expand to fill available space */
+}
+
+.list li .btn {
+    margin-left: 10px; /* Add margin between text and button */
 }
 
 
-.btn button{
+.btn button {
     align-items: center;
     margin: 0 auto;
-    padding: 10px; /* Add padding to the input field and button */
-    font-size: 16px; /* Set the font size */
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #0056b3;
 }
