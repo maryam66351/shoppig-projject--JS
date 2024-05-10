@@ -1,1 +1,1 @@
-# shoppig-projject--JS
+# shoppig-projject-JS
